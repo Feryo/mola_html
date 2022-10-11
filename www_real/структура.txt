@@ -1,0 +1,84 @@
+.
+├── bk
+│   ├── read_file.php
+│   ├── save_load_bk.php
+│   └── save_load_properties_bk.php
+├── css
+│   ├── mola_bk.css
+│   └── mola.css
+├── ELEMENTS_json_bk_основная модель.txt
+├── ELEMENTS_json.txt
+├── index.php
+├── info.txt
+├── js
+│   ├── bk
+│   │   ├── bk_functions.js
+│   │   ├── Element_class.js
+│   │   ├── elements_bk.js
+│   │   ├── ElementsCollector_class_bk.js
+│   │   ├── modeler_simple_bad.js
+│   │   ├── modeler_simple_bk2.js
+│   │   ├── modeler_simple_bk3.js
+│   │   ├── modeler_simple_bk4.js
+│   │   ├── modeler_simple_bk5.js
+│   │   ├── modeler_simple_bk6.js
+│   │   ├── modeler_simple_bk7.js
+│   │   ├── modeler_simple_bk8.js
+│   │   ├── modeler_simple_bk9.js
+│   │   ├── modeler_simple_bk.js
+│   │   ├── mola_bk2.js
+│   │   ├── mola_bk3.js
+│   │   └── mola_bk.js
+│   ├── default.js
+│   ├── ElementControl_class.js
+│   ├── ElementsCollector_class_bk.js
+│   ├── ElementsCollector_class.js
+│   ├── extra.js
+│   ├── InterfacesControl_class.js
+│   ├── NewElement_class.js
+│   ├── panel.js
+│   ├── mola_bk2.js
+│   ├── mola_bk.js
+│   ├── mola.js
+│   ├── save_load.js
+│   └── uni.js
+├── projects
+│   ├── _default
+│   │   ├── backups
+│   │   ├── images
+│   │   ├── js_props.json
+│   │   ├── MODEL.js
+│   │   ├── pages
+│   │   │   └── 1
+│   │   │       ├── page_1.txt
+│   │   │       ...
+│   │   └── php_props.json
+│   ├── default
+│   │   ├── js_props.json
+│   │   ├── pages
+│   │   │   ...
+│   │   └── php_props.json
+│   ├── GLOBAL
+│   │   ├── backups
+│   │   ├── images
+│   │   ├── js_props.json
+│   │   ├── MODEL.js
+│   │   ├── pages
+│   │   │   └── ...
+│   │   └── php_props.json
+│   └── search_system
+│       ├── backups
+│       ├── images
+│       ├── js_props.json
+│       ├── MODEL.js
+│       ├── pages
+│       │   └── ...
+│       └── php_props.json
+├── save
+│   └── page_properties
+│       └── page_1.txt
+├── save_load.php
+├── visual_model3.php
+├── модель.txt
+└── структура.txt
+

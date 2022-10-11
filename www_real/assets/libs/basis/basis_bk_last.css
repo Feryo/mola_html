@@ -1,0 +1,593 @@
+/* FONTS */
+@font-face {
+  font-family: font1;
+  src: url(/admin/fonts/font_base/ru/SpriteGraffitiShadow.otf);
+}
+@font-face {
+  font-family: font2;
+  src: url(/admin/fonts/font_base/ru/Kontanter-Bold.otf);
+}
+@font-face {
+  font-family: font3;
+  src: url(/admin/fonts/font_base/ru/Spirits-RU1.ttf);
+}
+@font-face {
+  font-family: font4;
+  src: url(/admin/fonts/font_base/ru/Stravinski-Deco.ttf);
+}
+@font-face {
+  font-family: font5;
+  src: url(/admin/fonts/font_base/ru/Resphekt.ttf);
+}
+@font-face {
+  font-family: font6;
+  src: url(/admin/fonts/font_base/ru/Toodik.otf);
+}
+
+/* Main declaration */
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 16px sans-serif;
+	position: relative;
+}
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
+input {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+select{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+div {
+	min-height: 25px;
+}
+pre {
+	margin: 0;
+	padding: 0;
+}
+/* Links */
+a {
+	text-decoration: none;
+	color: #555;
+	transition: 0.5s;
+}
+a:hover, a:focus  {
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #aaa;
+}
+
+/* Buttons */
+input[type="button"], input[type="submit"], button {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	min-height: 25px;
+	min-width: 30px;
+}
+input[type="button"]:hover, input[type="submit"]:hover, button:hover {
+	background-color: #ddd;
+}
+
+/* Inputs */
+input[type="text"], textarea {
+	background-color: #aaa;
+	border: none;
+	min-height: 25px;
+	transition: 0.5s;
+	width: 100%;
+}
+input[type="text"]:hover, textarea:hover {
+	background-color: #FFFF00;
+}
+
+
+/* Заголовки */
+	/* Главный заголовок страницы */
+	h1 {
+		font-size: 2em; 
+		text-align: center;
+	}
+	h1.big {
+		font-size: 3em;
+	}
+
+	/* Подраздел крупными буквами, однотипные главные разделы на одной странице, название товара */
+	h2 {
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	/* Название товара в уменьшенном виде */
+	h3 {
+		font-size: 1.4em;
+	}
+
+	/* Побочные заголовки */
+	h4 {
+		font-size: 1.3em;
+	}
+	h5 {
+		font-size: 1.2em;
+	}
+	h6 {
+		font-size: 1.1em;
+	}
+
+	/* Private Classes */
+	h1.b1 {
+
+	}
+	h1.b2 {
+
+	}
+	h2.b1 {
+
+	}
+	h2.b2 {
+
+	}
+	.row > div {
+		min-height: 10px;
+	}
+
+
+/* Base classes */
+.brow, .bline {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.brow {
+	justify-content: space-between;
+}
+.bline {
+	justify-content: flex-start;
+}
+.bcol {
+	display: flex;
+	flex-direction: column;
+}
+.fc, .jcc {
+	justify-content: center;
+}
+.c1, .c2, .c3, .c4, .c5, .c6 {
+	margin: 0;
+	border: none;
+}
+.c1, .c1_i > * {
+	width: 100%;
+}
+.c2, .c2_i > * {
+	width: 50%;
+}
+.c3, .c3_i > * {
+	width: 33.3%;
+}
+.c4, .c4_i > * {
+	width: 25%;
+}
+.c5, .c5_i > * {
+	width: 20%;
+}
+.c6, .c6_i > * {
+	width: 14.66%;
+}
+.pa, .pa_i > div, .pa_im  img {
+	position: absolute;
+}
+.pr, .pr_i > div, .pr_im  img {
+	position: relative;
+}
+.t5, .t5_i > div, .t5_im  img {
+	top: 5px;
+}
+.t10, .t10_i > div, .t10_im  img {
+	top: 10px;
+}
+.t15, .t15_i > div, .t15_im  img {
+	top: 15px;
+}
+.t20, .t20_i > div, .t20_im  img {
+	top: 20px;
+}
+.t25, .t25_i > div, .t25_im  img {
+	top: 25px;
+}
+.t30, .t30_i > div, .t30_im  img {
+	top: 30px;
+}
+.ma, .ma_i > *, .ma_im img {
+	margin: 0 auto;
+}
+.mt5, .mt5_i > div, .mt5_im img {
+	margin-top: 5px;
+}
+.mt10, .mt10_i > div, .mt10_im img {
+	margin-top: 10px;
+}
+.mt15, .mt15_i > div, .mt15_im img {
+	margin-top: 15px;
+}
+.mt20, .mt20_i > div, .mt20_im img {
+	margin-top: 20px;
+}
+.mt25, .mt25_i > div, .mt25_im img {
+	margin-top: 25px;
+}
+.mt30, .mt30_i > div, .mt30_im img {
+	margin-top: 30px;
+}
+.mt35, .mt35_i > div, .mt35_im img {
+	margin-top: 35px;
+}
+.mt50, .mt50_i > div, .mt50_im img {
+	margin-top: 50px;
+}
+
+.mb5, .mb5_i > div, .mb5_im img {
+	margin-bottom: 5px;
+}
+.mb10, .mb10_i > div, .mb10_im img {
+	margin-bottom: 10px;
+}
+.mb15, .mb15_i > div, .mb15_im img {
+	margin-bottom: 15px;
+}
+.mb20, .mb20_i > div, .mb20_im img {
+	margin-bottom: 20px;
+}
+.mb25, .mb25_i > div, .mb25_im img {
+	margin-bottom: 25px;
+}
+.mb30, .mb30_i > div, .mb30_im img {
+	margin-bottom: 30px;
+}
+
+.mh5, .mh5_i > div, .mh5_im img {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.mh10, .mh10_i > div, .mh10_im img {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.mh15, .mh15_i > div, .mh15_im img {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.mh20, .mh20_i > div, .mh20_im img {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.mh25, .mh25_i > div, .mh25_im img {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.mh30, .mh30_i > div, .mh30_im img {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.ml5, .ml5_i > div, .ml5_im img {
+	margin-left: 5px;
+}
+.ml10, .ml10_i > div, .ml10_im img {
+	margin-left: 10px;
+}
+.ml15, .ml15_i > div, .ml15_im img {
+	margin-left: 15px;
+}
+.ml20, .ml20_i > div, .ml20_im img {
+	margin-left: 20px;
+}
+.ml25, .ml25_i > div, .ml25_im img {
+	margin-left: 25px;
+}
+.ml30, .ml30_i > div, .ml30_im img {
+	margin-left: 30px;
+}
+.mr5, .mr5_i > div, .mr5_im img {
+	margin-right: 5px;
+}
+.mr10, .mr10_i > div, .mr10_im img {
+	margin-right: 10px;
+}
+.mr15, .mr15_i > div, .mr15_im img {
+	margin-right: 15px;
+}
+.mr20, .mr20_i > div, .mr20_im img {
+	margin-right: 20px;
+}
+.mr25, .mr25_i > div, .mr25_im img {
+	margin-right: 25px;
+}
+.mr30, .mr30_i > div, .mr30_im img {
+	margin-right: 30px;
+}
+.mr50, .mr50_i > div, .mr50_im img {
+	margin-right: 50px;
+}
+.pv5, .pv5_i > div, .pv5_im img {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.pv10, .pv10_i > div, .pv10_im img {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.pv15, .pv15_i > div, .pv15_im img {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.pv20, .pv20_i > div, .pv20_im img {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.ph5, .ph5_i > div, .ph5_im img {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.ph10, .ph10_i > div, .ph10_im img {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.ph15, .ph15_i > div, .ph15_im img {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.ph20, .ph20_i > div, .ph20_im img {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.p5, .p5_i > div, .p5_im img {
+	padding: 5px;
+}
+.p10, .p10_i > div, .p10_im img {
+	padding: 10px;
+}
+.p15, .p15_i > div, .p15_im img {
+	padding: 15px;
+}
+.p20, .p20_i > div, .p20_im img {
+	padding: 20px;
+}
+.p5_10, .p5_10_i > div, .p5_10_im img {
+	padding: 5px 10px;
+}
+.p10_15, .p10_15_i > div, .p10_15_im img {
+	padding: 10px 15px;
+}
+.p10_20, .p10_20_i > div, .p10_20_im img {
+	padding: 10px 20px;
+}
+.p15_30, .p15_30_i > div, .p15_30_im img {
+	padding: 15px 30px;
+}
+
+.tc, .tc_i > div {
+	text-align: center;
+}
+
+.oa, .oa_i > div {
+	overflow: auto;
+}
+.w10, .w10_i > div, .w10_im img {
+	width: 10%;	
+}
+.w20, .w20_i > div, .w20_im img {
+	width: 20%;	
+}
+.w30, .w30_i > div, .w30_im img {
+	width: 30%;	
+}
+.w40, .w40_i > div, .w40_im img {
+	width: 40%;	
+}
+.w50, .w50_i > div, .w50_im img {
+	width: 50%;	
+}
+.w60, .w60_i > div, .w60_im img {
+	width: 60%;	
+}
+.w70, .w70_i > div, .w70_im img {
+	width: 70%;	
+}
+.w80, .w80_i > div, .w80_im img {
+	width: 80%;	
+}
+.w90, .w90_i > div, .w90_im img {
+	width: 90%;	
+}
+.w100, .w100_i > div, .w100_im img {
+	width: 100%;	
+}
+.ha, .ha_i > div, .ha_i_i > div > div, .ha_im img {
+	height: auto;
+}
+.h1, .h1_i > div, .h1_i_i > div > div, .h1_im img {
+	height: 1px;
+}
+.h3, .h3_i > div, .h3_i_i > div > div, .h3_im img {
+	height: 3px;
+}
+.h5, .h5_i > div, .h5_i_i > div > div, .h5_im img {
+	height: 5px;
+}
+.h7, .h7_i > div, .h7_i_i > div > div, .h7_im img {
+	height: 7px;
+}
+.h10, .h10_i > div, .h10_i_i > div > div, .h10_im img {
+	height: 10px;
+}
+.h15, .h15_i > div, .h15_i_i > div > div, .h15_im img {
+	height: 15px;
+}
+.h20, .h20_i > div, .h20_i_i > div > div, .h20_im img {
+	height: 20px;
+}
+.h25, .h25_i > div, .h25_i_i > div > div, .h25_im img {
+	height: 25px;
+}
+.h30, .h30_i > div, .h30_i_i > div > div, .h30_im img {
+	height: 30px;
+}
+.wsnw, .wsnw_i > div {
+	white-space: nowrap;
+}
+.db, .db_i > div {
+	display: block;
+}
+.df, .df_i > div {
+	display: flex;
+}
+.hover_shadow:hover, .hover_shadow_i > div:hover, .hover_shadow_im img:hover {
+	box-shadow: 0 4px 8px rgb(0, 0, 0,.8);
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+/* Чёрно-белая расцветка */
+.bw, .bw_i > div {
+	color: #fff;
+	background-color: #000;
+}
+
+/* BTable */
+.btable1 {
+	display: flex;
+	flex-direction: column;
+}
+.btable1 > div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 3px;
+}
+.btable1 > div > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btable1 > div > div:nth-child(1) {
+	flex: 1 1 100px;
+	background-color: #fff;
+	text-align: center;
+}
+.btable1 > div > div:nth-child(2) {
+	flex: 10 10 900px;
+}
+.btable1 > div > div:nth-child(3) {
+	flex: 1 1 100px;
+}
+/* /BTable */
+/* BVert */
+/* /BVert */
+
+.bmodal {
+	display: none;
+}
+
+
+/* Микрокнопка */
+div a.bbtn_micro, div select.bbtn_micro, div button.bbtn_micro {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 1px;
+	padding: 5px 5px;
+	min-width: 20px;
+	color: #000;
+	background-color: #ddd;
+}
+	div a.bbtn_micro:hover, div a.bbtn_micro:focus, div select.bbtn_micro:hover, div select.bbtn_micro:focus, div button.bbtn_micro:hover, div button.bbtn_micro:focus {
+		color: #000;
+		background-color: #aaa;
+	}
+	div a.bbtn_micro.bactive, div select.bbtn_micro.bactive, div button.bbtn_micro.bactive {
+		color: #aaa;
+		background-color: #000;
+	}
+
+/* Прозрачная кнопка */
+div a.btn_t, div select.btn_t, div button.btn_t {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-width: 20px;
+	margin: 1px;
+	padding: 5px;
+	background-color: transparent;
+	color: #000; 
+	text-align: center;
+}
+	div a.btn_t:hover, div a.btn_t:focus, div select.btn_t:hover, div select.btn_t:focus, div button.btn_t:hover, div button.btn_t:focus {
+		color: #000; 
+		background-color: #f6e5e580;
+	}
+	div a.btn_t.bactive, div select.btn_t.bactive, div button.btn_t.bactive {
+		color: #f6e5e580; 
+		background-color: #000;
+	}
+div a.bbtn, div select.bbtn, div button.bbtn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 1px;
+	padding: 5px 20px;
+	text-align: center;
+}
+	/* Private Classes */
+		/* Pink button */
+		div a.bbtn.pink, div select.bbtn.pink, div button.bbtn.pink {
+			background-color: #ffe9f0;
+			color: #ec8c8c;
+		}
+		div a.bbtn.pink:hover, div a.bbtn.pink:focus, div select.bbtn.pink:hover, div select.bbtn.pink:focus, div button.bbtn.pink:hover, div button.bbtn.pink:focus {
+			background-color: #f5a4bd;
+			color: #b92d2d;
+		}
+		div a.bbtn.pink.bactive, div select.bbtn.pink.bactive, div button.bbtn.pink.bactive {
+			background-color: #ec8c8c;
+			color: #ffe9f0;
+		}
+
+		/* Green button */
+		div a.bbtn.green, div select.bbtn.green, div button.bbtn.green {
+			background-color: #dcf9df;
+			color: #89b962;
+		}
+		div a.bbtn.green:hover, div a.bbtn.green:focus, div select.bbtn.green:hover, div select.bbtn.green:focus, div button.bbtn.green:hover, div button.bbtn.green:focus {
+			background-color: #8ee197;
+			color: #4f9019;
+		}
+		div a.bbtn.green.bactive, div select.bbtn.green.bactive, div button.bbtn.green.bactive {
+			background-color: #89b962;
+			color: #dcf9df;
+		}
+
+/* Частные элементы */
+
+header .phone {
+	font-size: 18px;
+}
+

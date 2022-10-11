@@ -1,0 +1,169 @@
+/* FONTS */
+@font-face {
+  font-family: font1;
+  src: url(/admin/fonts/font_base/ru/SpriteGraffitiShadow.otf);
+}
+@font-face {
+  font-family: font2;
+  src: url(/admin/fonts/font_base/ru/Kontanter-Bold.otf);
+}
+@font-face {
+  font-family: font3;
+  src: url(/admin/fonts/font_base/ru/Spirits-RU1.ttf);
+}
+@font-face {
+  font-family: font4;
+  src: url(/admin/fonts/font_base/ru/Stravinski-Deco.ttf);
+}
+@font-face {
+  font-family: font5;
+  src: url(/admin/fonts/font_base/ru/Resphekt.ttf);
+}
+@font-face {
+  font-family: font6;
+  src: url(/admin/fonts/font_base/ru/Toodik.otf);
+}
+
+/* Main declaration */
+@media print {
+  .container {
+    width: auto;
+  }
+}
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font: 10px sans-serif;
+}
+body {
+	position: relative;
+}
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+header, footer, nav, article {
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+label {
+	margin: 0;
+}
+input {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+select{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+pre {
+	margin: 0;
+	padding: 0;
+}
+/* Links */
+a {
+	text-decoration: none;
+	color: #555;
+	transition: 0.5s;
+}
+a:hover, a:focus  {
+	text-decoration: none;
+}
+a:hover, a:focus {
+}
+ul, li  {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Buttons */
+button {
+	border: 0;
+	margin: 0;
+}
+input[type="button"], input[type="submit"], button {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	min-height: 20px;
+	min-width: 20px;
+	line-height: 20px;
+	transition: 0.5s;
+}
+input, button {
+	background-color: #ddd;
+}
+input:hover, button:hover {
+	background-color: #ced2dd;
+}
+
+/* Inputs */
+input[type="text"], textarea {
+	border: none;
+	min-height: 20px;
+	transition: 0.5s;
+	width: 100%;
+}
+
+
+/* Заголовки */
+	/* Главный заголовок страницы */
+	h1 {
+		font-size: 2em; 
+		text-align: center;
+	}
+	h1.big {
+		font-size: 3em;
+	}
+
+	/* Подраздел крупными буквами, однотипные главные разделы на одной странице, название товара */
+	h2 {
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	/* Название товара в уменьшенном виде */
+	h3 {
+		font-size: 1.4em;
+	}
+
+	/* Побочные заголовки */
+	h4 {
+		font-size: 1.3em;
+	}
+	h5 {
+		font-size: 1.2em;
+	}
+	h6 {
+		font-size: 1.1em;
+	}
+
+	/* Private Classes */
+	h1.b1 {
+
+	}
+	h1.b2 {
+
+	}
+	h2.b1 {
+
+	}
+	h2.b2 {
+
+	}
