@@ -12,3 +12,8 @@ Clone the project at a local virtual server as simple site
 Virtual server requirements:
 PHP (any version). You can use it without PHP.
 Prebuild php-extension for using file-open features. 
+
+Example:
+https://mola1.ru/
+https://mola-1.ru/
+https://mola-1.com/
